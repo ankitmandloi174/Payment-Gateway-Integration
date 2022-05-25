@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact</title>
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+			margin:0px;
+            text-decoration: none;
+		}
+		body{
+			background-image: url(https://media.istockphoto.com/photos/need-help-contact-us-picture-id1257481057?b=1&k=6&m=1257481057&s=170667a&w=0&h=OoUYe7had5gNAXsyDrNLxm0yQxDbNARI1lSh0UU1oxU=);
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		
+		input{
+			
+			display: block;
+			margin:23px auto;
+			width:294px;
+			height: 50px;
+			text-align: center;
+            border-radius: 20px;
+		}
+		input:hover{
+			border-color:#63df63;
+			background-color: transparent;
+		}
+		input[type=textarea]{
+			height:150px;
+		}
+		div{
+			
+			width:600px;
+			height:600px;
+			margin:-18px auto;
+
+		}
+		nav{
+			
+			height:100px;
+		}
+		nav ul{
+			float: right;
+		}
+		nav ul li{
+			display:inline-block;
+			margin-right: 20px;
+			line-height: 80px;
+			font-size: 30px;
+            
+		}
+       nav img{
+       	width:100px;
+       	height: 100px;
+        margin-left: 10px;
+
+       	
+       }
+      
+       i{
+       	margin-left: 30px;margin-top: 10px;
+       	color:#db5757;
+       }
+	    .fa-envelope{
+	    	float:right;
+
+	    }	
+	    .fa-home{
+	    	margin-left: 289px;
+	    	
+	    }
+	    #send{
+	    	width:116px;
+	    	height: 55px;
+	    	background-color: #b08d8a;
+	    }
+
+	    @media(max-width:1387px){
+
+	    	.fa-home{
+	    	margin-left:30px;
+	    }
+	    	.contact{
+	    		width:500px;
+	    		height: 193px;
+	    		margin:-18px auto;
+	    		
+	    	}
+	    	.fa-envelope{
+	    	float:none;
+	    }
+	    	i{
+	    		display: block;
+	    		margin:12px 30px;
+	    		
+	    		
+	    	}
+	    @media(max-width: 952px){
+
+	    }	 
+	   
+	</style>
+</head>
+<body>
+	<nav>
+		<img src="https://st.depositphotos.com/1364916/2428/v/600/depositphotos_24283903-stock-illustration-teamwork-hands-and-sun-logo.jpg ">
+		<ul>
+			<!-- <li id="contact">Contact us</li> -->
+			<li><a href="main.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+		</ul>
+	
+	</nav>
+
+	<nav class="contact">
+	 <i class="fa fa-phone" style="font-size:38px;" >  7623411634</i>
+     <i class="fa fa-home" style="font-size:36px">  Bhawar Kua Indore,M.P</i>
+	 <i class="fa fa-envelope" style="font-size:38px">  weunite@gmail.com</i>
+   </nav>
+    <div>
+    <input type="email" name="email" placeholder="Enter Your E-mail" id="email">
+    
+    <input type="text" name="Address"placeholder="Enter Your Address" id="address">
+    
+    <input type="text" name="phone" placeholder="Enter Your phone number " id="phone">
+    <input type="textarea" name="feedback" placeholder="Your message" id="feedback">
+    <input type="button" name="data" value="Send" id="send"  onclick="fun()">
+    </div>
+    <script type="text/javascript">
+    	function fun()
+    	{
+    		var email1=document.getElementById('email').value;
+
+    		var address1=document.getElementById('address').value;
+    		
+    		 var phone1=document.getElementById('phone').value;
+    		 var feedback1=document.getElementById('feedback').value;
+    		 if(email1=="")
+			{
+				alert("Please Enter Email Id");
+			}
+    		else if(address1=="")
+			{
+				alert("Please Enter address");
+			}
+			
+			else if(phone1=="")
+			{
+				alert("Please Enter phone");
+			}
+			else if(feedback1=="")
+			{
+				alert("Please Enter message");
+			}
+			else 
+			{
+				alert("Message Send Successfully");
+			}
+    		
+    	}
+    </script>
+</body>
+</html>
